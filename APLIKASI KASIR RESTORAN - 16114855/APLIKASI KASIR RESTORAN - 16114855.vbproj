@@ -1,0 +1,261 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{50A7D91B-AEA7-4BF4-8185-15C00569AF3E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>APLIKASI_KASIR_RESTORAN___16114855.My.MyApplication</StartupObject>
+    <RootNamespace>APLIKASI_KASIR_RESTORAN___16114855</RootNamespace>
+    <AssemblyName>APLIKASI KASIR RESTORAN - 16114855</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>APLIKASI KASIR RESTORAN - 16114855.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>APLIKASI KASIR RESTORAN - 16114855.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.BonusSkins.v16.1, Version=16.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v16.1, Version=16.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v16.1.Core, Version=16.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Sparkline.v16.1.Core, Version=16.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v16.1, Version=16.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v16.1, Version=16.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v16.1, Version=16.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v16.1, Version=16.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v16.1, Version=16.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraNavBar.v16.1, Version=16.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v16.1, Version=16.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="MySql.Data, Version=6.6.5.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form\frmDetilLaporanPemesanan.Designer.vb">
+      <DependentUpon>frmDetilLaporanPemesanan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frmDetilLaporanPemesanan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmLaporanTransaksi.Designer.vb">
+      <DependentUpon>frmLaporanTransaksi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frmLaporanTransaksi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmListMenu.Designer.vb">
+      <DependentUpon>frmListMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frmListMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmListPelanggan.Designer.vb">
+      <DependentUpon>frmListPelanggan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frmListPelanggan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmListPemesanan.Designer.vb">
+      <DependentUpon>frmListPemesanan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frmListPemesanan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmReferensiMenu.Designer.vb">
+      <DependentUpon>frmReferensiMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frmReferensiMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmReferensiPelanggan.Designer.vb">
+      <DependentUpon>frmReferensiPelanggan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frmReferensiPelanggan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmSetupHakAkses.Designer.vb">
+      <DependentUpon>frmSetupHakAkses.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frmSetupHakAkses.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmSetupKonfigurasiServer.Designer.vb">
+      <DependentUpon>frmSetupKonfigurasiServer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frmSetupKonfigurasiServer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmSetupLogin.Designer.vb">
+      <DependentUpon>frmSetupLogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frmSetupLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmSetupMenuUtama.Designer.vb">
+      <DependentUpon>frmSetupMenuUtama.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frmSetupMenuUtama.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmSetupPengguna.Designer.vb">
+      <DependentUpon>frmSetupPengguna.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frmSetupPengguna.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmTransaksiPembayaran.Designer.vb">
+      <DependentUpon>frmTransaksiPembayaran.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frmTransaksiPembayaran.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\frmTransaksiPemesanan.Designer.vb">
+      <DependentUpon>frmTransaksiPemesanan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\frmTransaksiPemesanan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module\Module1.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Form\frmDetilLaporanPemesanan.resx">
+      <DependentUpon>frmDetilLaporanPemesanan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmLaporanTransaksi.resx">
+      <DependentUpon>frmLaporanTransaksi.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmListMenu.resx">
+      <DependentUpon>frmListMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmListPelanggan.resx">
+      <DependentUpon>frmListPelanggan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmListPemesanan.resx">
+      <DependentUpon>frmListPemesanan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmReferensiMenu.resx">
+      <DependentUpon>frmReferensiMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmReferensiPelanggan.resx">
+      <DependentUpon>frmReferensiPelanggan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmSetupHakAkses.resx">
+      <DependentUpon>frmSetupHakAkses.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmSetupKonfigurasiServer.resx">
+      <DependentUpon>frmSetupKonfigurasiServer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmSetupLogin.resx">
+      <DependentUpon>frmSetupLogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmSetupMenuUtama.resx">
+      <DependentUpon>frmSetupMenuUtama.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmSetupPengguna.resx">
+      <DependentUpon>frmSetupPengguna.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmTransaksiPembayaran.resx">
+      <DependentUpon>frmTransaksiPembayaran.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\frmTransaksiPemesanan.resx">
+      <DependentUpon>frmTransaksiPemesanan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Report\" />
+    <Folder Include="Setup\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
